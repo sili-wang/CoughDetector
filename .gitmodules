@@ -1,0 +1,9 @@
+[submodule "FileProvider"]
+	path = FileProvider
+	url = https://github.com/amosavian/FileProvider
+[submodule "mysql-swift"]
+	path = mysql-swift
+	url = https://github.com/novi/mysql-swift.git
+[submodule "OHMySQL"]
+	path = OHMySQL
+	url = https://github.com/oleghnidets/OHMySQL.git

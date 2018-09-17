@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2B71304718EB80A800DA9374 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B71304618EB80A800DA9374 /* AVFoundation.framework */; };
+		2B86B2B218F35C2300347397 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B86B2B018F35C2300347397 /* MainWindow.xib */; };
+		8250CD57145B602D00806437 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8250CD56145B602D00806437 /* Accelerate.framework */; };
+		9291E5EB214AED90007E1FF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9291E5EA214AED90007E1FF6 /* CoreLocation.framework */; };
+		A16C47120DE37F9E00F4A0B3 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16C47110DE37F9E00F4A0B3 /* OpenGLES.framework */; };
+		A16C473F0DE3801700F4A0B3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16C473E0DE3801700F4A0B3 /* QuartzCore.framework */; };
+		D71281B52071FDED003CAAFC /* OOPExceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AE71D60BE7000012A69 /* OOPExceptions.swift */; };
+		D78F4AE91D60BE7000012A69 /* NumTypes+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AE61D60BE7000012A69 /* NumTypes+Conversion.swift */; };
+		D78F4AEF1D60BEAF00012A69 /* CABitOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AEB1D60BEAF00012A69 /* CABitOperations.swift */; };
+		D78F4AF01D60BEAF00012A69 /* CADebugMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AEC1D60BEAF00012A69 /* CADebugMacros.swift */; };
+		D78F4AF11D60BEAF00012A69 /* CAStreamBasicDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AED1D60BEAF00012A69 /* CAStreamBasicDescription.swift */; };
+		D78F4AF21D60BEAF00012A69 /* CAXException.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AEE1D60BEAF00012A69 /* CAXException.swift */; };
+		D78F4AF81D60BF3300012A69 /* DSPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AF51D60BF3300012A69 /* DSPHelper.swift */; };
+		D78F4AFC1D60C01A00012A69 /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AF91D60C01A00012A69 /* AudioController.swift */; };
+		D78F4AFD1D60C01A00012A69 /* aurioTouchAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AFA1D60C01A00012A69 /* aurioTouchAppDelegate.swift */; };
+		D78F4AFE1D60C01A00012A69 /* EAGLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AFB1D60C01A00012A69 /* EAGLView.swift */; };
+		D78F4AFF1D60C05500012A69 /* BufferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78F4AF31D60BF3300012A69 /* BufferManager.swift */; };
+		D79AEF1C1D60C37E00584688 /* DCRejectionFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79AEF1B1D60C37E00584688 /* DCRejectionFilter.swift */; };
+		F06A21D020CF09640065F988 /* dict.txt in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CA20CF09640065F988 /* dict.txt */; };
+		F06A21D120CF09640065F988 /* scream in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CB20CF09640065F988 /* scream */; };
+		F06A21D220CF09640065F988 /* cough in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CC20CF09640065F988 /* cough */; };
+		F06A21D320CF09640065F988 /* speech in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CD20CF09640065F988 /* speech */; };
+		F06A21D420CF09640065F988 /* net.slf in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CE20CF09640065F988 /* net.slf */; };
+		F06A21D520CF09640065F988 /* hmmlist in Resources */ = {isa = PBXBuildFile; fileRef = F06A21CF20CF09640065F988 /* hmmlist */; };
+		F06F758820D0A27E00617973 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06F758720D0A27E00617973 /* Images.xcassets */; };
+		F07CEE9320C33FB400E5D064 /* HVite.c in Sources */ = {isa = PBXBuildFile; fileRef = F07CEE9220C33FB400E5D064 /* HVite.c */; };
+		F07CEE9C20C33FF500E5D064 /* HRec.c in Sources */ = {isa = PBXBuildFile; fileRef = F07CEE9420C33FF300E5D064 /* HRec.c */; };
+		F07CEE9D20C33FF500E5D064 /* HDict.c in Sources */ = {isa = PBXBuildFile; fileRef = F07CEE9720C33FF400E5D064 /* HDict.c */; };
+		F07CEE9E20C33FF500E5D064 /* HMap.c in Sources */ = {isa = PBXBuildFile; fileRef = F07CEE9920C33FF400E5D064 /* HMap.c */; };
+		F07CEE9F20C33FF500E5D064 /* HNet.c in Sources */ = {isa = PBXBuildFile; fileRef = F07CEE9B20C33FF500E5D064 /* HNet.c */; };
+		F07CEEA220C3454100E5D064 /* FileStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07CEEA120C3454100E5D064 /* FileStringTool.swift */; };
+		F0B315B120BDDA1400AD394B /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B315B020BDDA1400AD394B /* WebService.swift */; };
+		F0B315DD20C2F93700AD394B /* esignal.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315D920C2F93600AD394B /* esignal.c */; };
+		F0B315E920C31F7D00AD394B /* esig_nat.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315E820C31F7C00AD394B /* esig_nat.c */; };
+		F0B315EC20C31FD200AD394B /* esig_asc.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315EA20C31FD100AD394B /* esig_asc.c */; };
+		F0B315ED20C31FD200AD394B /* esig_edr.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315EB20C31FD200AD394B /* esig_edr.c */; };
+		F0B3160D20C3200700AD394B /* HAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315EE20C3200400AD394B /* HAudio.c */; };
+		F0B3160E20C3200700AD394B /* HWave.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315EF20C3200400AD394B /* HWave.c */; };
+		F0B3160F20C3200700AD394B /* HAdapt.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315F620C3200500AD394B /* HAdapt.c */; };
+		F0B3161020C3200700AD394B /* HVQ.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315F720C3200500AD394B /* HVQ.c */; };
+		F0B3161120C3200700AD394B /* HUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315FA20C3200500AD394B /* HUtil.c */; };
+		F0B3161220C3200700AD394B /* HSigP.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315FC20C3200500AD394B /* HSigP.c */; };
+		F0B3161320C3200700AD394B /* HCopy.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315FD20C3200600AD394B /* HCopy.c */; };
+		F0B3161420C3200700AD394B /* HMem.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B315FF20C3200600AD394B /* HMem.c */; };
+		F0B3161520C3200700AD394B /* HLabel.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160120C3200600AD394B /* HLabel.c */; };
+		F0B3161620C3200700AD394B /* HParm.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160220C3200600AD394B /* HParm.c */; };
+		F0B3161720C3200700AD394B /* HShell.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160520C3200600AD394B /* HShell.c */; };
+		F0B3161820C3200700AD394B /* HModel.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160620C3200700AD394B /* HModel.c */; };
+		F0B3161920C3200700AD394B /* HTrain.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160820C3200700AD394B /* HTrain.c */; };
+		F0B3161A20C3200700AD394B /* HMath.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160920C3200700AD394B /* HMath.c */; };
+		F0B3161B20C3200700AD394B /* HFB.c in Sources */ = {isa = PBXBuildFile; fileRef = F0B3160B20C3200700AD394B /* HFB.c */; };
+		F0DC453920C4F411003AFE70 /* hcopy.conf in Resources */ = {isa = PBXBuildFile; fileRef = F0DC453220C4F411003AFE70 /* hcopy.conf */; };
+		F0DC453A20C4F411003AFE70 /* gram.txt in Resources */ = {isa = PBXBuildFile; fileRef = F0DC453320C4F411003AFE70 /* gram.txt */; };
+		F0DC453E20C59372003AFE70 /* hvite.conf in Resources */ = {isa = PBXBuildFile; fileRef = F0DC453D20C59372003AFE70 /* hvite.conf */; };
+		F0F962872118738A002877C9 /* OHMySQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F962862118738A002877C9 /* OHMySQL.framework */; };
+		F0F962A0211892BB002877C9 /* FileUploadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F96297211892BA002877C9 /* FileUploadOperation.swift */; };
+		F0F962A1211892BB002877C9 /* FileDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F96298211892BA002877C9 /* FileDownloadOperation.swift */; };
+		F0F962A2211892BB002877C9 /* ReadStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F96299211892BA002877C9 /* ReadStreamOperation.swift */; };
+		F0F962A3211892BB002877C9 /* DirectoryCreationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629A211892BA002877C9 /* DirectoryCreationOperation.swift */; };
+		F0F962A4211892BB002877C9 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629B211892BA002877C9 /* Operation.swift */; };
+		F0F962A5211892BB002877C9 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629C211892BA002877C9 /* Session.swift */; };
+		F0F962A6211892BB002877C9 /* StreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629D211892BA002877C9 /* StreamOperation.swift */; };
+		F0F962A7211892BB002877C9 /* ResourceListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629E211892BA002877C9 /* ResourceListOperation.swift */; };
+		F0F962A8211892BB002877C9 /* WriteStreamOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F9629F211892BB002877C9 /* WriteStreamOperation.swift */; };
+		F0F962AC211D3486002877C9 /* uga-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F0F962AB211D3486002877C9 /* uga-logo.png */; };
+		F7DF06DE0DF4AD57005687F5 /* button_press.caf in Resources */ = {isa = PBXBuildFile; fileRef = F7DF06DC0DF4AD57005687F5 /* button_press.caf */; };
+		F7E58EDA0DCFD988006C4A2F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E58ED90DCFD988006C4A2F /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F02B604D2117F18D002C297E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		002D7AE7A9E1014F41290BCE /* Pods-CoughDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoughDetector.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoughDetector/Pods-CoughDetector.release.xcconfig"; sourceTree = "<group>"; };
+		0F6DA2E1033E6688853E6383 /* Pods-CoughDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoughDetector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoughDetector/Pods-CoughDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* CoughDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoughDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B71304618EB80A800DA9374 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2B869E111D51590F00995BDC /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		2B86B2B118F35C2300347397 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = SOURCE_ROOT; };
+		8250CD56145B602D00806437 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		89562625D37F61C7367499FB /* Pods_CoughDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoughDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		9291E5EA214AED90007E1FF6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A16C47110DE37F9E00F4A0B3 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A16C473E0DE3801700F4A0B3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D78F4AE61D60BE7000012A69 /* NumTypes+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumTypes+Conversion.swift"; sourceTree = "<group>"; };
+		D78F4AE71D60BE7000012A69 /* OOPExceptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OOPExceptions.swift; sourceTree = "<group>"; };
+		D78F4AEB1D60BEAF00012A69 /* CABitOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABitOperations.swift; sourceTree = "<group>"; };
+		D78F4AEC1D60BEAF00012A69 /* CADebugMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADebugMacros.swift; sourceTree = "<group>"; };
+		D78F4AED1D60BEAF00012A69 /* CAStreamBasicDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStreamBasicDescription.swift; sourceTree = "<group>"; };
+		D78F4AEE1D60BEAF00012A69 /* CAXException.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAXException.swift; sourceTree = "<group>"; };
+		D78F4AF31D60BF3300012A69 /* BufferManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BufferManager.swift; sourceTree = "<group>"; };
+		D78F4AF51D60BF3300012A69 /* DSPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DSPHelper.swift; sourceTree = "<group>"; };
+		D78F4AF91D60C01A00012A69 /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		D78F4AFA1D60C01A00012A69 /* aurioTouchAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aurioTouchAppDelegate.swift; sourceTree = "<group>"; };
+		D78F4AFB1D60C01A00012A69 /* EAGLView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EAGLView.swift; sourceTree = "<group>"; };
+		D79AEF181D60C2F200584688 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D79AEF1B1D60C37E00584688 /* DCRejectionFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCRejectionFilter.swift; sourceTree = "<group>"; };
+		F06A21CA20CF09640065F988 /* dict.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dict.txt; sourceTree = "<group>"; };
+		F06A21CB20CF09640065F988 /* scream */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scream; sourceTree = "<group>"; };
+		F06A21CC20CF09640065F988 /* cough */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cough; sourceTree = "<group>"; };
+		F06A21CD20CF09640065F988 /* speech */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = speech; sourceTree = "<group>"; };
+		F06A21CE20CF09640065F988 /* net.slf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = net.slf; sourceTree = "<group>"; };
+		F06A21CF20CF09640065F988 /* hmmlist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hmmlist; sourceTree = "<group>"; };
+		F06F758720D0A27E00617973 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F07CEE9220C33FB400E5D064 /* HVite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HVite.c; sourceTree = "<group>"; };
+		F07CEE9420C33FF300E5D064 /* HRec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HRec.c; sourceTree = "<group>"; };
+		F07CEE9520C33FF300E5D064 /* HNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNet.h; sourceTree = "<group>"; };
+		F07CEE9620C33FF400E5D064 /* HRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRec.h; sourceTree = "<group>"; };
+		F07CEE9720C33FF400E5D064 /* HDict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HDict.c; sourceTree = "<group>"; };
+		F07CEE9820C33FF400E5D064 /* HDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDict.h; sourceTree = "<group>"; };
+		F07CEE9920C33FF400E5D064 /* HMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HMap.c; sourceTree = "<group>"; };
+		F07CEE9A20C33FF500E5D064 /* HMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMap.h; sourceTree = "<group>"; };
+		F07CEE9B20C33FF500E5D064 /* HNet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HNet.c; sourceTree = "<group>"; };
+		F07CEEA020C3417700E5D064 /* HVite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVite.h; sourceTree = "<group>"; };
+		F07CEEA120C3454100E5D064 /* FileStringTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStringTool.swift; sourceTree = "<group>"; };
+		F0B315B020BDDA1400AD394B /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F0B315D920C2F93600AD394B /* esignal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esignal.c; sourceTree = "<group>"; };
+		F0B315DA20C2F93600AD394B /* esignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = esignal.h; sourceTree = "<group>"; };
+		F0B315E820C31F7C00AD394B /* esig_nat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esig_nat.c; sourceTree = "<group>"; };
+		F0B315EA20C31FD100AD394B /* esig_asc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esig_asc.c; sourceTree = "<group>"; };
+		F0B315EB20C31FD200AD394B /* esig_edr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = esig_edr.c; sourceTree = "<group>"; };
+		F0B315EE20C3200400AD394B /* HAudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HAudio.c; sourceTree = "<group>"; };
+		F0B315EF20C3200400AD394B /* HWave.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HWave.c; sourceTree = "<group>"; };
+		F0B315F020C3200400AD394B /* HCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCopy.h; sourceTree = "<group>"; };
+		F0B315F120C3200400AD394B /* HAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAdapt.h; sourceTree = "<group>"; };
+		F0B315F220C3200500AD394B /* HUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUtil.h; sourceTree = "<group>"; };
+		F0B315F320C3200500AD394B /* HModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HModel.h; sourceTree = "<group>"; };
+		F0B315F420C3200500AD394B /* HParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HParm.h; sourceTree = "<group>"; };
+		F0B315F520C3200500AD394B /* HMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMath.h; sourceTree = "<group>"; };
+		F0B315F620C3200500AD394B /* HAdapt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HAdapt.c; sourceTree = "<group>"; };
+		F0B315F720C3200500AD394B /* HVQ.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HVQ.c; sourceTree = "<group>"; };
+		F0B315F820C3200500AD394B /* HLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLabel.h; sourceTree = "<group>"; };
+		F0B315F920C3200500AD394B /* HFB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFB.h; sourceTree = "<group>"; };
+		F0B315FA20C3200500AD394B /* HUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HUtil.c; sourceTree = "<group>"; };
+		F0B315FB20C3200500AD394B /* HSigP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSigP.h; sourceTree = "<group>"; };
+		F0B315FC20C3200500AD394B /* HSigP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HSigP.c; sourceTree = "<group>"; };
+		F0B315FD20C3200600AD394B /* HCopy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HCopy.c; sourceTree = "<group>"; };
+		F0B315FE20C3200600AD394B /* HWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWave.h; sourceTree = "<group>"; };
+		F0B315FF20C3200600AD394B /* HMem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HMem.c; sourceTree = "<group>"; };
+		F0B3160020C3200600AD394B /* HMem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMem.h; sourceTree = "<group>"; };
+		F0B3160120C3200600AD394B /* HLabel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HLabel.c; sourceTree = "<group>"; };
+		F0B3160220C3200600AD394B /* HParm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HParm.c; sourceTree = "<group>"; };
+		F0B3160320C3200600AD394B /* HTrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTrain.h; sourceTree = "<group>"; };
+		F0B3160420C3200600AD394B /* coughDetector-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "coughDetector-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0B3160520C3200600AD394B /* HShell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HShell.c; sourceTree = "<group>"; };
+		F0B3160620C3200700AD394B /* HModel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HModel.c; sourceTree = "<group>"; };
+		F0B3160720C3200700AD394B /* HShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HShell.h; sourceTree = "<group>"; };
+		F0B3160820C3200700AD394B /* HTrain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HTrain.c; sourceTree = "<group>"; };
+		F0B3160920C3200700AD394B /* HMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HMath.c; sourceTree = "<group>"; };
+		F0B3160A20C3200700AD394B /* HVQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVQ.h; sourceTree = "<group>"; };
+		F0B3160B20C3200700AD394B /* HFB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = HFB.c; sourceTree = "<group>"; };
+		F0B3160C20C3200700AD394B /* HAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAudio.h; sourceTree = "<group>"; };
+		F0DC453220C4F411003AFE70 /* hcopy.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hcopy.conf; sourceTree = "<group>"; };
+		F0DC453320C4F411003AFE70 /* gram.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gram.txt; sourceTree = "<group>"; };
+		F0DC453D20C59372003AFE70 /* hvite.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hvite.conf; sourceTree = "<group>"; };
+		F0F962862118738A002877C9 /* OHMySQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OHMySQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F96297211892BA002877C9 /* FileUploadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUploadOperation.swift; sourceTree = "<group>"; };
+		F0F96298211892BA002877C9 /* FileDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDownloadOperation.swift; sourceTree = "<group>"; };
+		F0F96299211892BA002877C9 /* ReadStreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadStreamOperation.swift; sourceTree = "<group>"; };
+		F0F9629A211892BA002877C9 /* DirectoryCreationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryCreationOperation.swift; sourceTree = "<group>"; };
+		F0F9629B211892BA002877C9 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		F0F9629C211892BA002877C9 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F0F9629D211892BA002877C9 /* StreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamOperation.swift; sourceTree = "<group>"; };
+		F0F9629E211892BA002877C9 /* ResourceListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceListOperation.swift; sourceTree = "<group>"; };
+		F0F9629F211892BB002877C9 /* WriteStreamOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteStreamOperation.swift; sourceTree = "<group>"; };
+		F0F962AB211D3486002877C9 /* uga-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uga-logo.png"; sourceTree = "<group>"; };
+		F7DF06DC0DF4AD57005687F5 /* button_press.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = button_press.caf; sourceTree = "<group>"; };
+		F7E58ED90DCFD988006C4A2F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9291E5EB214AED90007E1FF6 /* CoreLocation.framework in Frameworks */,
+				F0F962872118738A002877C9 /* OHMySQL.framework in Frameworks */,
+				2B71304718EB80A800DA9374 /* AVFoundation.framework in Frameworks */,
+				8250CD57145B602D00806437 /* Accelerate.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				F7E58EDA0DCFD988006C4A2F /* AudioToolbox.framework in Frameworks */,
+				A16C47120DE37F9E00F4A0B3 /* OpenGLES.framework in Frameworks */,
+				A16C473F0DE3801700F4A0B3 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D79AEF1B1D60C37E00584688 /* DCRejectionFilter.swift */,
+				D78F4AFB1D60C01A00012A69 /* EAGLView.swift */,
+				D78F4AFA1D60C01A00012A69 /* aurioTouchAppDelegate.swift */,
+				D78F4AF91D60C01A00012A69 /* AudioController.swift */,
+				D78F4AF31D60BF3300012A69 /* BufferManager.swift */,
+				D78F4AF51D60BF3300012A69 /* DSPHelper.swift */,
+				F0B315B020BDDA1400AD394B /* WebService.swift */,
+				F07CEEA120C3454100E5D064 /* FileStringTool.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* CoughDetector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F06F758720D0A27E00617973 /* Images.xcassets */,
+				F0B315B620C2F53A00AD394B /* HTK */,
+				D79AEF181D60C2F200584688 /* LICENSE.txt */,
+				2B869E111D51590F00995BDC /* ReadMe.md */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				E42A7C09FAC6CD8E7E184F7F /* Pods */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F0F96296211892A1002877C9 /* FTP */,
+				F74ADD0E0DDA24AA0046BEC2 /* PublicUtility */,
+				D78F4AE41D60BE7000012A69 /* OOPUtils */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F0F962AB211D3486002877C9 /* uga-logo.png */,
+				F0DC452E20C4F3D6003AFE70 /* htk */,
+				2B86B2B018F35C2300347397 /* MainWindow.xib */,
+				F7D3FD760FD49018003CBAE4 /* audio */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9291E5EA214AED90007E1FF6 /* CoreLocation.framework */,
+				F0F962862118738A002877C9 /* OHMySQL.framework */,
+				2B71304618EB80A800DA9374 /* AVFoundation.framework */,
+				8250CD56145B602D00806437 /* Accelerate.framework */,
+				A16C473E0DE3801700F4A0B3 /* QuartzCore.framework */,
+				A16C47110DE37F9E00F4A0B3 /* OpenGLES.framework */,
+				F7E58ED90DCFD988006C4A2F /* AudioToolbox.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				89562625D37F61C7367499FB /* Pods_CoughDetector.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D78F4AE41D60BE7000012A69 /* OOPUtils */ = {
+			isa = PBXGroup;
+			children = (
+				D78F4AE61D60BE7000012A69 /* NumTypes+Conversion.swift */,
+				D78F4AE71D60BE7000012A69 /* OOPExceptions.swift */,
+			);
+			path = OOPUtils;
+			sourceTree = "<group>";
+		};
+		E42A7C09FAC6CD8E7E184F7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F6DA2E1033E6688853E6383 /* Pods-CoughDetector.debug.xcconfig */,
+				002D7AE7A9E1014F41290BCE /* Pods-CoughDetector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0B315B620C2F53A00AD394B /* HTK */ = {
+			isa = PBXGroup;
+			children = (
+				F0B3160420C3200600AD394B /* coughDetector-Bridging-Header.h */,
+				F07CEE9720C33FF400E5D064 /* HDict.c */,
+				F07CEE9820C33FF400E5D064 /* HDict.h */,
+				F07CEE9920C33FF400E5D064 /* HMap.c */,
+				F07CEE9A20C33FF500E5D064 /* HMap.h */,
+				F07CEE9B20C33FF500E5D064 /* HNet.c */,
+				F07CEE9520C33FF300E5D064 /* HNet.h */,
+				F07CEE9420C33FF300E5D064 /* HRec.c */,
+				F07CEE9620C33FF400E5D064 /* HRec.h */,
+				F07CEE9220C33FB400E5D064 /* HVite.c */,
+				F0B315F620C3200500AD394B /* HAdapt.c */,
+				F0B315F120C3200400AD394B /* HAdapt.h */,
+				F0B315EE20C3200400AD394B /* HAudio.c */,
+				F0B3160C20C3200700AD394B /* HAudio.h */,
+				F0B315FD20C3200600AD394B /* HCopy.c */,
+				F0B315F020C3200400AD394B /* HCopy.h */,
+				F0B3160B20C3200700AD394B /* HFB.c */,
+				F0B315F920C3200500AD394B /* HFB.h */,
+				F0B3160120C3200600AD394B /* HLabel.c */,
+				F0B315F820C3200500AD394B /* HLabel.h */,
+				F0B3160920C3200700AD394B /* HMath.c */,
+				F0B315F520C3200500AD394B /* HMath.h */,
+				F0B315FF20C3200600AD394B /* HMem.c */,
+				F0B3160020C3200600AD394B /* HMem.h */,
+				F0B3160620C3200700AD394B /* HModel.c */,
+				F0B315F320C3200500AD394B /* HModel.h */,
+				F0B3160220C3200600AD394B /* HParm.c */,
+				F0B315F420C3200500AD394B /* HParm.h */,
+				F0B3160520C3200600AD394B /* HShell.c */,
+				F0B3160720C3200700AD394B /* HShell.h */,
+				F0B315FC20C3200500AD394B /* HSigP.c */,
+				F0B315FB20C3200500AD394B /* HSigP.h */,
+				F0B3160820C3200700AD394B /* HTrain.c */,
+				F0B3160320C3200600AD394B /* HTrain.h */,
+				F0B315FA20C3200500AD394B /* HUtil.c */,
+				F0B315F220C3200500AD394B /* HUtil.h */,
+				F0B315F720C3200500AD394B /* HVQ.c */,
+				F0B3160A20C3200700AD394B /* HVQ.h */,
+				F0B315EF20C3200400AD394B /* HWave.c */,
+				F0B315FE20C3200600AD394B /* HWave.h */,
+				F0B315EA20C31FD100AD394B /* esig_asc.c */,
+				F0B315EB20C31FD200AD394B /* esig_edr.c */,
+				F0B315E820C31F7C00AD394B /* esig_nat.c */,
+				F0B315D920C2F93600AD394B /* esignal.c */,
+				F0B315DA20C2F93600AD394B /* esignal.h */,
+				F07CEEA020C3417700E5D064 /* HVite.h */,
+			);
+			path = HTK;
+			sourceTree = "<group>";
+		};
+		F0DC452E20C4F3D6003AFE70 /* htk */ = {
+			isa = PBXGroup;
+			children = (
+				F06A21CC20CF09640065F988 /* cough */,
+				F06A21CA20CF09640065F988 /* dict.txt */,
+				F06A21CF20CF09640065F988 /* hmmlist */,
+				F06A21CE20CF09640065F988 /* net.slf */,
+				F06A21CB20CF09640065F988 /* scream */,
+				F06A21CD20CF09640065F988 /* speech */,
+				F0DC453D20C59372003AFE70 /* hvite.conf */,
+				F0DC453320C4F411003AFE70 /* gram.txt */,
+				F0DC453220C4F411003AFE70 /* hcopy.conf */,
+			);
+			path = htk;
+			sourceTree = "<group>";
+		};
+		F0F96296211892A1002877C9 /* FTP */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9629A211892BA002877C9 /* DirectoryCreationOperation.swift */,
+				F0F96298211892BA002877C9 /* FileDownloadOperation.swift */,
+				F0F96297211892BA002877C9 /* FileUploadOperation.swift */,
+				F0F9629B211892BA002877C9 /* Operation.swift */,
+				F0F96299211892BA002877C9 /* ReadStreamOperation.swift */,
+				F0F9629E211892BA002877C9 /* ResourceListOperation.swift */,
+				F0F9629C211892BA002877C9 /* Session.swift */,
+				F0F9629D211892BA002877C9 /* StreamOperation.swift */,
+				F0F9629F211892BB002877C9 /* WriteStreamOperation.swift */,
+			);
+			path = FTP;
+			sourceTree = "<group>";
+		};
+		F74ADD0E0DDA24AA0046BEC2 /* PublicUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D78F4AEB1D60BEAF00012A69 /* CABitOperations.swift */,
+				D78F4AEC1D60BEAF00012A69 /* CADebugMacros.swift */,
+				D78F4AEE1D60BEAF00012A69 /* CAXException.swift */,
+				D78F4AED1D60BEAF00012A69 /* CAStreamBasicDescription.swift */,
+			);
+			path = PublicUtility;
+			sourceTree = "<group>";
+		};
+		F7D3FD760FD49018003CBAE4 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				F7DF06DC0DF4AD57005687F5 /* button_press.caf */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* CoughDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CoughDetector" */;
+			buildPhases = (
+				B8AA17FD00120331C9A7C1F0 /* [CP] Check Pods Manifest.lock */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				F02B604D2117F18D002C297E /* Embed Frameworks */,
+				45EBC7C3AC1C5CCD46049E04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoughDetector;
+			productName = aurioTouch;
+			productReference = 1D6058910D05DD3D006BFB54 /* CoughDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 69Z4397M26;
+						LastSwiftMigration = 0930;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CoughDetector" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* CoughDetector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06A21D520CF09640065F988 /* hmmlist in Resources */,
+				F06A21D420CF09640065F988 /* net.slf in Resources */,
+				F7DF06DE0DF4AD57005687F5 /* button_press.caf in Resources */,
+				F0DC453E20C59372003AFE70 /* hvite.conf in Resources */,
+				2B86B2B218F35C2300347397 /* MainWindow.xib in Resources */,
+				F0DC453920C4F411003AFE70 /* hcopy.conf in Resources */,
+				F06A21D020CF09640065F988 /* dict.txt in Resources */,
+				F06F758820D0A27E00617973 /* Images.xcassets in Resources */,
+				F0DC453A20C4F411003AFE70 /* gram.txt in Resources */,
+				F06A21D120CF09640065F988 /* scream in Resources */,
+				F0F962AC211D3486002877C9 /* uga-logo.png in Resources */,
+				F06A21D320CF09640065F988 /* speech in Resources */,
+				F06A21D220CF09640065F988 /* cough in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45EBC7C3AC1C5CCD46049E04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoughDetector/Pods-CoughDetector-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OHMySQL/OHMySQL.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHMySQL.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoughDetector/Pods-CoughDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AA17FD00120331C9A7C1F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoughDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0B315B120BDDA1400AD394B /* WebService.swift in Sources */,
+				F0B3161920C3200700AD394B /* HTrain.c in Sources */,
+				D78F4AFE1D60C01A00012A69 /* EAGLView.swift in Sources */,
+				F07CEE9C20C33FF500E5D064 /* HRec.c in Sources */,
+				D78F4AF11D60BEAF00012A69 /* CAStreamBasicDescription.swift in Sources */,
+				F0B3161A20C3200700AD394B /* HMath.c in Sources */,
+				F0B3161320C3200700AD394B /* HCopy.c in Sources */,
+				F0F962A8211892BB002877C9 /* WriteStreamOperation.swift in Sources */,
+				F0B3161B20C3200700AD394B /* HFB.c in Sources */,
+				F0B3160D20C3200700AD394B /* HAudio.c in Sources */,
+				F07CEEA220C3454100E5D064 /* FileStringTool.swift in Sources */,
+				F0B3161120C3200700AD394B /* HUtil.c in Sources */,
+				D78F4AFC1D60C01A00012A69 /* AudioController.swift in Sources */,
+				F07CEE9F20C33FF500E5D064 /* HNet.c in Sources */,
+				D78F4AE91D60BE7000012A69 /* NumTypes+Conversion.swift in Sources */,
+				F0B3161220C3200700AD394B /* HSigP.c in Sources */,
+				F0F962A1211892BB002877C9 /* FileDownloadOperation.swift in Sources */,
+				D78F4AF21D60BEAF00012A69 /* CAXException.swift in Sources */,
+				F0B3161820C3200700AD394B /* HModel.c in Sources */,
+				F0B315DD20C2F93700AD394B /* esignal.c in Sources */,
+				D78F4AFD1D60C01A00012A69 /* aurioTouchAppDelegate.swift in Sources */,
+				D71281B52071FDED003CAAFC /* OOPExceptions.swift in Sources */,
+				F0B315EC20C31FD200AD394B /* esig_asc.c in Sources */,
+				F07CEE9D20C33FF500E5D064 /* HDict.c in Sources */,
+				F07CEE9320C33FB400E5D064 /* HVite.c in Sources */,
+				F0B3160F20C3200700AD394B /* HAdapt.c in Sources */,
+				F0B3161420C3200700AD394B /* HMem.c in Sources */,
+				D78F4AF81D60BF3300012A69 /* DSPHelper.swift in Sources */,
+				F0B3161720C3200700AD394B /* HShell.c in Sources */,
+				F0B315ED20C31FD200AD394B /* esig_edr.c in Sources */,
+				F0F962A7211892BB002877C9 /* ResourceListOperation.swift in Sources */,
+				F0B3160E20C3200700AD394B /* HWave.c in Sources */,
+				F0B3161520C3200700AD394B /* HLabel.c in Sources */,
+				F0F962A6211892BB002877C9 /* StreamOperation.swift in Sources */,
+				F0B3161020C3200700AD394B /* HVQ.c in Sources */,
+				F07CEE9E20C33FF500E5D064 /* HMap.c in Sources */,
+				D78F4AFF1D60C05500012A69 /* BufferManager.swift in Sources */,
+				D78F4AEF1D60BEAF00012A69 /* CABitOperations.swift in Sources */,
+				F0F962A2211892BB002877C9 /* ReadStreamOperation.swift in Sources */,
+				F0F962A4211892BB002877C9 /* Operation.swift in Sources */,
+				D79AEF1C1D60C37E00584688 /* DCRejectionFilter.swift in Sources */,
+				F0F962A0211892BB002877C9 /* FileUploadOperation.swift in Sources */,
+				F0F962A3211892BB002877C9 /* DirectoryCreationOperation.swift in Sources */,
+				F0F962A5211892BB002877C9 /* Session.swift in Sources */,
+				F0B3161620C3200700AD394B /* HParm.c in Sources */,
+				D78F4AF01D60BEAF00012A69 /* CADebugMacros.swift in Sources */,
+				F0B315E920C31F7D00AD394B /* esig_nat.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2B86B2B018F35C2300347397 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B86B2B118F35C2300347397 /* en */,
+			);
+			name = MainWindow.xib;
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6DA2E1033E6688853E6383 /* Pods-CoughDetector.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 69Z4397M26;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoughDetector_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OHMySQL/OHMySQL/lib/ios",
+					"$(PROJECT_DIR)/OHMySQL/OHMySQL/lib/mac",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-D'ARCH=\"arm64\"'";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensorweb.uga.coughdetection1;
+				PRODUCT_NAME = CoughDetector;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HTK/coughDetector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002D7AE7A9E1014F41290BCE /* Pods-CoughDetector.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 69Z4397M26;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoughDetector_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OHMySQL/OHMySQL/lib/ios",
+					"$(PROJECT_DIR)/OHMySQL/OHMySQL/lib/mac",
+				);
+				OTHER_CFLAGS = "-D'ARCH=\"arm64\"'";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sensorweb.uga.coughdetection1;
+				PRODUCT_NAME = CoughDetector;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "HTK/coughDetector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = CoughDetector;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = ansi;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = CoughDetector;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "CoughDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "CoughDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
